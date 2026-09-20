@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Valter Kittler — Senior Visual Designer</title>
+<meta name="description" content="Senior Visual Designer in iGaming. Creative direction and hands-on craft for games and betting platforms — the Betano platform at Kaizen Gaming, and real-money game art at Gameskraft.">
+<meta name="theme-color" content="#0C0B0A">
+<meta property="og:title" content="Valter Kittler — Senior Visual Designer">
+<meta property="og:description" content="iGaming visuals, 2D game art and art direction. Betano, Gameskraft, Grou.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/img/portrait.webp">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="css/site.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23121110'/%3E%3Ctext x='16' y='22' font-family='Helvetica,Arial' font-size='15' font-weight='700' fill='%23F4F2EE' text-anchor='middle'%3EVK%3C/text%3E%3C/svg%3E">
+<script>
+  /* Set the theme before first paint so there is never a flash of the wrong one.
+     The `js` class gates every scroll animation: without scripting, or if a
+     script fails, the page renders fully visible instead of blank. */
+  (function () {
+    document.documentElement.classList.add('js');
+    try {
+      var t = localStorage.getItem('vk-theme');
+      if (t === 'dark' || t === 'light') document.documentElement.dataset.theme = t;
+      var l = localStorage.getItem('vk-lang') || 'en';
+      document.documentElement.lang = l === 'pt' ? 'pt-BR' : 'en';
+      document.documentElement.dataset.lang = l;
+    } catch (e) {}
+  })();
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+<div class="scroll-progress" aria-hidden="true"><i></i></div>
+
+<!-- ══════════════════════════════════════════════════════ nav ── -->
+<header class="nav" id="nav">
+  <a class="nav-brand" href="#top" aria-label="Valter Kittler — home">
+    <span class="nav-mark">VK</span>
+    <span class="nav-brand-name">Valter&nbsp;Kittler<i>.</i></span>
+  </a>
+
+  <nav class="nav-links" aria-label="Sections">
+    <a href="#work" data-i18n="nav.work">Work</a>
+    <a href="#about" data-i18n="nav.about">About</a>
+    <a href="#capabilities" data-i18n="nav.capabilities">Craft</a>
+    <a href="#experience" data-i18n="nav.experience">Experience</a>
+    <a href="#contact" data-i18n="nav.contact">Contact</a>
+  </nav>
+
+  <div class="nav-tools">
+    <div class="lang-switch" role="group" aria-label="Language">
+      <button type="button" data-lang="en" aria-pressed="true">EN</button>
+      <span aria-hidden="true">/</span>
+      <button type="button" data-lang="pt" aria-pressed="false">PT</button>
+    </div>
+    <button type="button" class="theme-toggle" id="themeToggle" aria-pressed="false">
+      <span class="visually-hidden">Switch to dark mode</span>
+      <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.6v2.6M12 18.8v2.6M4.36 4.36 6.2 6.2M17.8 17.8l1.84 1.84M2.6 12h2.6M18.8 12h2.6M4.36 19.64 6.2 17.8M17.8 6.2l1.84-1.84"/></svg>
+      <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 14.4A8.4 8.4 0 0 1 9.6 3.8a8.4 8.4 0 1 0 10.6 10.6Z"/></svg>
+    </button>
+    <button type="button" class="nav-burger" id="navBurger" aria-expanded="false" aria-controls="nav">
+      <span class="visually-hidden" data-i18n="menu.label">Menu</span>
+      <i></i><i></i>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+<span id="top"></span>
+
+<!-- ══════════════════════════════════════════════════════ hero ── -->
+<section class="hero" aria-labelledby="heroName">
+  <div class="hero-grid">
+
+    <p class="hero-eyebrow anim" style="--d:0">
+      <span data-i18n="hero.role">Senior Visual Designer</span>
+      <span class="sep" aria-hidden="true"></span>
+      <span data-i18n="hero.place">São Paulo, Brazil</span>
+    </p>
+
+    <h1 class="hero-name" id="heroName">
+      <span class="hero-line anim" style="--d:1">Valter</span>
+      <span class="hero-line hero-line--2 anim" style="--d:2">Kittler<i class="dot">.</i></span>
+    </h1>
+
+    <figure class="hero-portrait anim" style="--d:3">
+      <span class="hero-shots">
+        <img class="hero-shot hero-shot--dark" src="assets/img/portrait.webp"
+             width="677" height="909" fetchpriority="high" decoding="async"
+             alt="Valter Kittler, seated, cut out against the page">
+        <img class="hero-shot hero-shot--light" src="assets/img/portrait-light.webp"
+             width="677" height="909" decoding="async" alt="" aria-hidden="true">
+      </span>
+      <figcaption class="hero-tag hero-tag--a" aria-hidden="true" data-i18n="hero.tagA">Art Direction</figcaption>
+      <figcaption class="hero-tag hero-tag--b" aria-hidden="true" data-i18n="hero.tagB">iGaming</figcaption>
+      <figcaption class="hero-tag hero-tag--c" aria-hidden="true" data-i18n="hero.tagC">AI Motion</figcaption>
+    </figure>
+
+    <div class="hero-cta anim" style="--d:4">
+      <a class="btn btn--solid" href="#work">
+        <span data-i18n="hero.ctaWork">See the work</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+      </a>
+      <a class="btn btn--ghost" href="assets/cv/Valter-Kittler-CV-2026.pdf" download>
+        <span data-i18n="hero.ctaCv">Download CV</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 11l5 5 5-5M4 20h16"/></svg>
+      </a>
+    </div>
+
+    <dl class="hero-stats anim" style="--d:5">
+      <div><dt data-i18n="stat.1.k">Currently</dt>
+           <dd data-i18n="stat.1.v">Betano · Kaizen Gaming</dd></div>
+      <div><dt data-i18n="stat.2.k">Markets shipped in</dt>
+           <dd><span class="num" data-count="2">2</span><span data-i18n="stat.2.v"> — Brazil &amp; India</span></dd></div>
+      <div><dt data-i18n="stat.3.k">Designing since</dt>
+           <dd><span class="num" data-count="2020" data-plain="1">2020</span></dd></div>
+    </dl>
+  </div>
+
+  <a class="scroll-cue" href="#about" aria-hidden="true" tabindex="-1">
+    <span data-i18n="hero.scroll">Scroll</span>
+    <svg viewBox="0 0 24 24"><path d="M12 4v15M6 13l6 6 6-6"/></svg>
+  </a>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ marquee ── -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span class="marquee-set" data-marquee>
+      <b data-i18n="mq.1">Art Direction</b><i></i>
+      <b data-i18n="mq.2">iGaming Platform Visuals</b><i></i>
+      <b data-i18n="mq.3">2D Game Art</b><i></i>
+      <b data-i18n="mq.4">Illustration</b><i></i>
+      <b data-i18n="mq.5">Campaign &amp; CRM</b><i></i>
+      <b data-i18n="mq.6">AI Pipelines</b><i></i>
+      <b data-i18n="mq.7">Branding</b><i></i>
+    </span>
+  </div>
+</div>
+
+<!-- ═════════════════════════════════════════════════════ about ── -->
+<section class="section about" id="about">
+  <p class="sec-label reveal"><span>01</span><span data-i18n="about.label">About</span></p>
+  <div class="about-grid">
+    <h2 class="about-lead reveal" data-i18n-html="about.lead">
+      Multidisciplinary designer across <em>art direction</em>, <em>product design</em>
+      and <em>2D game production</em> — shipping real-money and casual titles in two markets.
+    </h2>
+    <div class="about-body">
+      <p class="reveal" data-i18n="about.p1">
+        I built the visual pipeline from scratch at Gameskraft in India, and I now design the
+        visuals of the Betano platform at Kaizen Gaming Brazil — one of the country's largest
+        betting and casino products. The hero pieces at the top of the site, the promotional
+        banners, the stories: the first thing a player sees.
+      </p>
+      <p class="reveal" data-i18n="about.p2">
+        I pair illustration and brand craft with UX thinking and AI-accelerated workflows, which
+        is how a campaign world goes from brief to live placement in days rather than weeks. I
+        also brief, review and approve the work of a partner agency team, holding quality across
+        everything that ships.
+      </p>
+      <ul class="about-meta reveal">
+        <li><span data-i18n="about.m1k">Based</span><b data-i18n="about.m1v">São Paulo, BR</b></li>
+        <li><span data-i18n="about.m2k">Languages</span><b data-i18n="about.m2v">Portuguese (native) · English (fluent)</b></li>
+        <li><span data-i18n="about.m3k">Focus</span><b data-i18n="about.m3v">iGaming · Games · AI workflows</b></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div id="work"></div>
+
+<!-- ── 03 · Truco Patrão ── -->
+<section class="section chapter chapter--alt" id="truco">
+  <header class="chapter-head">
+    <p class="sec-label reveal"><span>02</span><span data-i18n="ch.truco.label">Real-money game</span></p>
+    <h2 class="chapter-title reveal">Truco&nbsp;Patrão <em>— Gameskraft</em></h2>
+    <p class="chapter-role reveal">
+      <span data-i18n="ch.truco.role">2D Production Lead</span>
+      <i></i><span>2024 — 2025</span>
+    </p>
+    <p class="chapter-solo reveal" data-i18n="ch.truco.p">
+      A real-money Truco built for Brazilian players. I created every game asset and
+      directed the art and production from concept to live launch — the lobby and
+      table UI, the card and board art, the mascot, the cast of avatars and the
+      animated reactions — and the game reached 10,000+ active cash players in its
+      first year.
+    </p>
+  </header>
+
+  <div class="cutrow">
+    <p class="sec-mini reveal" data-i18n="ch.truco.g0">The game on screen</p>
+    <div class="cutouts cutouts--phone" data-cutouts="truco-screens"></div>
+  </div>
+
+  <div class="cutrow">
+    <p class="sec-mini reveal" data-i18n="ch.truco.g1">Mascot &amp; identity</p>
+    <div class="cutouts cutouts--lg" data-cutouts="truco-mascot"></div>
+  </div>
+
+  <div class="cutrow">
+    <p class="sec-mini reveal" data-i18n="ch.truco.g3">Reactions — animated in-game emoji</p>
+    <div class="hstrip" data-hstrip="truco-emoji"><div class="hstrip-track"></div></div>
+  </div>
+
+</section>
+
+<!-- ── 04 · Ludo Campeões ── -->
+<section class="section chapter" id="ludo">
+  <header class="chapter-head">
+    <p class="sec-label reveal"><span>03</span><span data-i18n="ch.ludo.label">Casual game</span></p>
+    <h2 class="chapter-title reveal">Ludo&nbsp;Campeões <em>— Gameskraft</em></h2>
+    <p class="chapter-role reveal">
+      <span data-i18n="ch.ludo.role">2D Production Lead</span>
+      <i></i><span>2024 — 2025</span>
+    </p>
+    <p class="chapter-solo reveal" data-i18n="ch.ludo.p">
+      Adapting a casual Ludo title for South American players alongside product and UX — lobby,
+      game table, the Liga Campeã ladder and the reactivation flow. I ran the user-testing
+      workshops that told us what needed to change.
+    </p>
+  </header>
+  <div class="cutrow">
+    <p class="sec-mini reveal" data-i18n="ch.ludo.g1">Identity</p>
+    <div class="cutouts cutouts--lg" data-cutouts="ludo-brand"></div>
+  </div>
+
+  <div class="cutrow">
+    <p class="sec-mini reveal" data-i18n="ch.ludo.g2">The game on screen</p>
+    <div class="cutouts cutouts--phone" data-cutouts="ludo-screens"></div>
+  </div>
+
+</section>
+
+<!-- ── 05 · Brand & editorial boards ── -->
+<section class="section chapter chapter--alt chapter--flush" id="brand">
+  <header class="chapter-head">
+    <p class="sec-label reveal"><span>04</span><span data-i18n="ch.brand.label">Brand &amp; editorial</span></p>
+    <h2 class="chapter-title reveal">Grou<em>, Rocking Talent, Self Guru</em></h2>
+    <p class="chapter-role reveal">
+      <span data-i18n="ch.brand.role">Art Director</span>
+      <i></i><span>2021 — 2024</span>
+      <i></i><span data-i18n="ch.brand.city">Porto Alegre, Brazil</span>
+    </p>
+    <p class="chapter-solo reveal" data-i18n="ch.brand.p">
+      Before games, four years of agency and in-house art direction: visual strategy across
+      branding, social, UI and motion — and lead art director on Rocking Talent Brasil magazine.
+      Keep scrolling to run through each board.
+    </p>
+  </header>
+  <div class="strips" data-strips></div>
+</section>
+
+<!-- ══════════════════════════════════════════════ capabilities ── -->
+<section class="section caps" id="capabilities">
+  <p class="sec-label reveal"><span>05</span><span data-i18n="caps.label">What I do</span></p>
+  <div class="caps-grid">
+    <ol class="caps-list" id="capsList">
+      <li class="cap is-active" data-cap="0"><span class="cap-idx">01</span><h3 data-i18n="caps.1.t">Art Direction</h3></li>
+      <li class="cap" data-cap="1"><span class="cap-idx">02</span><h3 data-i18n="caps.lead.t">Design Leadership</h3></li>
+      <li class="cap" data-cap="2"><span class="cap-idx">03</span><h3 data-i18n="caps.2.t">Campaign &amp; CRM Design</h3></li>
+      <li class="cap" data-cap="3"><span class="cap-idx">04</span><h3 data-i18n="caps.3.t">2D Game Art</h3></li>
+      <li class="cap" data-cap="4"><span class="cap-idx">05</span><h3 data-i18n="caps.4.t">UI &amp; UX Design</h3></li>
+      <li class="cap" data-cap="5"><span class="cap-idx">06</span><h3 data-i18n="caps.5.t">Motion &amp; AI Pipelines</h3></li>
+    </ol>
+    <div class="caps-panels">
+      <p class="cap-panel is-active" data-cap="0" data-i18n="caps.1.d">Setting the visual direction for a product or campaign — the look, the system, the rules — and keeping it coherent across every format.</p>
+      <p class="cap-panel" data-cap="1" data-i18n="caps.lead.d">Leading designers at Gameskraft and Betano — briefing, reviewing and approving deliveries, and holding the quality bar on everything that ships.</p>
+      <p class="cap-panel" data-cap="2" data-i18n="caps.2.d">Sports events, casino tournaments, VIP offers, reactivation cycles. High-volume, on-brand, against a release calendar that never stops.</p>
+      <p class="cap-panel" data-cap="3" data-i18n="caps.3.d">Characters, avatars, mascots, emoji sets, table and lobby art for real-money and casual titles — sketch to vector to final asset.</p>
+      <p class="cap-panel" data-cap="4" data-i18n="caps.4.d">Product screens, onboarding, in-app messaging and companion apps, built with the flows and the user testing that back them up.</p>
+      <p class="cap-panel" data-cap="5" data-i18n="caps.5.d">After Effects for craft, Higgsfield for motion, Claude across the workflow — turning static placements into moving, higher-impact assets.</p>
+      <div class="caps-tools reveal">
+        <p class="sec-mini" data-i18n="caps.tools">Toolkit</p>
+        <ul>
+          <li>Illustrator</li><li>Photoshop</li><li>After Effects</li><li>Figma</li>
+          <li>Miro</li><li>Higgsfield</li><li>Claude</li><li>Jira</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════ experience ── -->
+<section class="section exp" id="experience">
+  <p class="sec-label reveal"><span>06</span><span data-i18n="exp.label">Experience</span></p>
+  <ol class="timeline">
+    <li class="tl reveal">
+      <span class="tl-when">2025 — <span data-i18n="present">Present</span></span>
+      <div class="tl-what"><h3>Kaizen Gaming <em>— Betano</em></h3>
+        <p data-i18n="exp.1.r">Senior Visual Designer · São Paulo, Brazil</p></div>
+    </li>
+    <li class="tl reveal">
+      <span class="tl-when">2024 — 2025</span>
+      <div class="tl-what"><h3>Gameskraft</h3>
+        <p data-i18n="exp.2.r">Senior Graphic Designer / 2D Production Lead · Remote from Brazil</p></div>
+    </li>
+    <li class="tl reveal">
+      <span class="tl-when">2022 — 2024</span>
+      <div class="tl-what"><h3>Grou</h3>
+        <p data-i18n="exp.3.r">Art Director · Porto Alegre, Brazil</p></div>
+    </li>
+    <li class="tl reveal">
+      <span class="tl-when">2021</span>
+      <div class="tl-what"><h3>Elofy</h3>
+        <p data-i18n="exp.4.r">Art Director · Porto Alegre, Brazil</p></div>
+    </li>
+    <li class="tl reveal">
+      <span class="tl-when">2020 — 2021</span>
+      <div class="tl-what"><h3>Conjunto Comunicação <em>· DesignLAB, UniRitter</em></h3>
+        <p data-i18n="exp.5.r">Art Direction &amp; Design Internships · Porto Alegre, Brazil</p></div>
+    </li>
+  </ol>
+
+  <div class="edu reveal">
+    <div>
+      <p class="sec-mini" data-i18n="edu.label">Education</p>
+      <h3 data-i18n="edu.1.t">BA in Graphic Design</h3>
+      <p data-i18n="edu.1.s">UniRitter · Porto Alegre, RS, Brazil</p>
+    </div>
+    <div>
+      <p class="sec-mini">&nbsp;</p>
+      <h3 data-i18n="edu.2.t">Exchange Program — Art &amp; Design</h3>
+      <p data-i18n="edu.2.s">Santa Fe University of Art and Design · Santa Fe, NM, USA</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ contact ── -->
+<section class="section contact" id="contact">
+  <p class="sec-label reveal"><span>07</span><span data-i18n="contact.label">Contact</span></p>
+  <h2 class="contact-head reveal" data-i18n-html="contact.head">
+    Let's make something<br>players remember<i class="dot">.</i>
+  </h2>
+  <p class="contact-sub reveal" data-i18n="contact.sub">
+    Open to conversations about art direction and visual design in iGaming, games and brand.
+  </p>
+
+  <a class="contact-mail reveal" href="mailto:valter.kittler@gmail.com">
+    <span>valter.kittler@gmail.com</span>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+  </a>
+
+  <ul class="contact-links reveal">
+    <li><a href="https://www.linkedin.com/in/valterkittler" target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.76-2.05 4.02 0 4.76 2.5 4.76 5.75V21h-4v-5.7c0-1.36-.03-3.11-1.9-3.11-1.9 0-2.19 1.48-2.19 3.01V21H9Z"/></svg>
+      <span>LinkedIn</span></a></li>
+    <li><a href="https://wa.me/5551980250070" target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M12.04 2C6.6 2 2.2 6.4 2.2 11.84c0 1.94.52 3.76 1.42 5.32L2 22l4.98-1.58a9.8 9.8 0 0 0 5.06 1.4c5.44 0 9.84-4.4 9.84-9.84S17.48 2 12.04 2Zm5.72 13.9c-.24.68-1.4 1.32-1.94 1.36-.5.04-.98.22-3.3-.7-2.78-1.1-4.54-3.96-4.68-4.14-.14-.18-1.12-1.5-1.12-2.86 0-1.36.7-2.02.96-2.3.24-.26.52-.32.7-.32h.5c.16 0 .38-.06.58.46.24.6.8 2.06.88 2.2.08.14.12.32.02.5-.1.2-.16.32-.3.5-.14.16-.3.38-.44.5-.14.14-.3.3-.12.6.18.3.78 1.3 1.68 2.1 1.16 1.04 2.14 1.36 2.44 1.5.3.16.48.14.66-.08.18-.2.76-.88.96-1.2.2-.3.4-.24.66-.14.28.1 1.72.82 2.02.96.3.14.5.22.56.32.08.12.08.62-.16 1.3Z"/></svg>
+      <span>WhatsApp</span></a></li>
+    <li><a href="assets/cv/Valter-Kittler-CV-2026.pdf" download>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 11l5 5 5-5M4 20h16"/></svg>
+      <span data-i18n="contact.cv">Curriculum (PDF)</span></a></li>
+  </ul>
+</section>
+
+</main>
+
+<footer class="foot">
+  <p>© <span id="year">2026</span> Valter Kittler Munhoz</p>
+  <p data-i18n="foot.note">Senior Visual Designer · São Paulo, Brazil</p>
+  <a href="#top" class="foot-top"><span data-i18n="foot.top">Back to top</span>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20V5M6 11l6-6 6 6"/></svg></a>
+</footer>
+
+<!-- ══════════════════════════════════════════════════ lightbox ── -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Work viewer" hidden>
+  <button type="button" class="lb-close" data-lb="close">
+    <span class="visually-hidden" data-i18n="lb.close">Close</span>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+  </button>
+  <button type="button" class="lb-nav lb-prev" data-lb="prev">
+    <span class="visually-hidden" data-i18n="lb.prev">Previous</span>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 8 12l7 7"/></svg>
+  </button>
+  <button type="button" class="lb-nav lb-next" data-lb="next">
+    <span class="visually-hidden" data-i18n="lb.next">Next</span>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
+  </button>
+  <figure class="lb-stage"><div class="lb-media" id="lbMedia"></div>
+    <figcaption class="lb-cap"><span id="lbCount"></span><span id="lbText"></span></figcaption>
+  </figure>
+</div>
+
+<script src="js/works.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>
