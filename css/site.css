@@ -742,17 +742,11 @@ svg.fill { width: 1em; height: 1em; fill: currentColor; stroke: none; }
   opacity: .35; mix-blend-mode: overlay;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
-.scene--rocking::after {     /* a torn red band behind the phones */
-  inset: 26% 44% 22% 0;
-  background: #C9221F;
-  /* ragged on three sides, like a strip torn out of a page */
-  clip-path: polygon(0 6%, 9% 2%, 20% 7%, 33% 0, 47% 6%, 60% 1%, 74% 7%, 88% 2%, 97% 5%,
-                     94% 18%, 99% 31%, 93% 45%, 98% 58%, 94% 72%, 99% 86%, 95% 97%,
-                     82% 94%, 68% 100%, 55% 94%, 41% 99%, 27% 93%, 13% 99%, 0 95%);
-  opacity: .92;
-}
 .scene--rocking .scene-copy { position: relative; }
-
+/* a soft red light that lifts the phones off the black */
+.stage-glow--red {
+  background: radial-gradient(closest-side, rgba(229,48,44,.55), rgba(229,48,44,.2) 50%, transparent);
+}
 .scene--selfguru {
   --sc-bg: #F5F1EE; --sc-accent: #E5384F;
   --sc-ink: #1C2050; --sc-ink-2: rgba(28,32,80,.72); --sc-line: rgba(28,32,80,.16);
@@ -1205,7 +1199,6 @@ svg.fill { width: 1em; height: 1em; fill: currentColor; stroke: none; }
   .scene-copy--logo .scene-title { font-size: clamp(2rem, 7vw, 4.6rem); }
   .scene--truco .art--logo, .scene--ludo .art--logo { display: none; }
   .scene--flip .scene-copy { order: 0; }
-  .scene--rocking::after { inset: auto 0 6% 0; height: 34%; }
   .phones { --ph: min(60vh, 560px, calc(96cqw / (2.6 * var(--arn)))); }
   .about-lead { max-width: 24ch; }
 }
