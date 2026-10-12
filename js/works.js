@@ -8,177 +8,230 @@ window.WORKS = {
   "w": 677,
   "h": 909
  },
- "truco-mascot": [
+ "truco": [
   {
-   "src": "img/work/truco-mascot/image61.webp",
+   "src": "img/work/truco/image42.webp",
+   "w": 360,
+   "h": 720,
+   "en": "Paulista lobby",
+   "pt": "Lobby Paulista"
+  },
+  {
+   "src": "img/work/truco/image50.webp",
+   "w": 700,
+   "h": 1400,
+   "en": "Match table — the hand in play",
+   "pt": "Mesa de jogo — a mão em andamento"
+  },
+  {
+   "src": "img/work/truco/image86.webp",
+   "w": 788,
+   "h": 1400,
+   "en": "In-game offer — R$500 in five minutes",
+   "pt": "Oferta in-game — R$500 em cinco minutos"
+  }
+ ],
+ "ludo": [
+  {
+   "src": "img/work/ludo/image131.webp",
+   "w": 360,
+   "h": 720,
+   "en": "Lobby & tournaments",
+   "pt": "Lobby e torneios"
+  },
+  {
+   "src": "img/work/ludo/image135.webp",
+   "w": 642,
+   "h": 1400,
+   "en": "Game board",
+   "pt": "Tabuleiro"
+  },
+  {
+   "src": "img/work/ludo/image133.webp",
+   "w": 700,
+   "h": 1400,
+   "en": "Match result",
+   "pt": "Resultado da partida"
+  }
+ ],
+ "grou": [
+  {
+   "src": "img/work/grou/stories-gestao-comport-28.webp",
+   "w": 1080,
+   "h": 1350,
+   "en": "Blog launch — behavioural management",
+   "pt": "Lançamento do blog — gestão comportamental"
+  },
+  {
+   "src": "img/work/grou/newsletter-rh-ponta-02.webp",
+   "w": 788,
+   "h": 1400,
+   "en": "Newsletter story — RH de ponta a ponta",
+   "pt": "Story da newsletter — RH de ponta a ponta"
+  },
+  {
+   "src": "img/work/grou/carrossel-apple-01.webp",
+   "w": 1134,
+   "h": 1379,
+   "en": "Carousel — the soft skill behind Steve Jobs",
+   "pt": "Carrossel — a soft skill de Steve Jobs"
+  },
+  {
+   "src": "img/work/grou/carrossel-apple-03.webp",
+   "w": 1080,
+   "h": 1350,
+   "en": "Carousel — inside slide",
+   "pt": "Carrossel — lâmina interna"
+  },
+  {
+   "src": "img/work/grou/card-top-01.webp",
+   "w": 1080,
+   "h": 1350,
+   "en": "Top of Mind RH — Top 5 announcement",
+   "pt": "Top of Mind RH — anúncio Top 5"
+  },
+  {
+   "src": "img/work/grou/card-compatibilidade-profissional-11.webp",
+   "w": 1080,
+   "h": 1350,
+   "en": "PDA Assessment — product card",
+   "pt": "PDA Assessment — card de produto"
+  },
+  {
+   "src": "img/work/grou/4-motivos-pda-07.webp",
+   "w": 1080,
+   "h": 1350,
+   "en": "PDA — book a demo",
+   "pt": "PDA — agende uma demonstração"
+  }
+ ],
+ "rocking": [
+  {
+   "src": "img/work/rocking/rockstars0.webp",
+   "w": 788,
+   "h": 1400,
+   "en": "Marque um Rockstar — campaign story",
+   "pt": "Marque um Rockstar — story de campanha"
+  },
+  {
+   "src": "img/work/rocking/thumb-franzoti.webp",
+   "w": 788,
+   "h": 1400,
+   "en": "Interview cover — Ana Paula Franzoti",
+   "pt": "Capa de entrevista — Ana Paula Franzoti"
+  },
+  {
+   "src": "img/work/rocking/rocking-talent-kelly-prancheta-1-copia.webp",
+   "w": 1080,
+   "h": 1350,
+   "en": "Profile carousel — Kelly, cover",
+   "pt": "Carrossel de perfil — Kelly, capa"
+  },
+  {
+   "src": "img/work/rocking/rocking-talent-kelly-02.webp",
+   "w": 1080,
+   "h": 1350,
+   "en": "Profile carousel — Kelly, story",
+   "pt": "Carrossel de perfil — Kelly, história"
+  },
+  {
+   "src": "img/work/rocking/carrossel-dia-do-rock-prancheta-1-copia.webp",
+   "w": 1080,
+   "h": 1350,
+   "en": "Dia do Rock — carousel cover",
+   "pt": "Dia do Rock — capa do carrossel"
+  },
+  {
+   "src": "img/work/rocking/carrossel-dia-do-rock-02.webp",
+   "w": 1080,
+   "h": 1350,
+   "en": "Dia do Rock — Freddie Mercury at Morumbi",
+   "pt": "Dia do Rock — Freddie Mercury no Morumbi"
+  }
+ ],
+ "selfguru": [
+  {
+   "src": "img/work/selfguru/especialistas-adriane-parissi-stories.webp",
+   "w": 788,
+   "h": 1400,
+   "en": "Specialists series — Adriane Parissi",
+   "pt": "Série Especialistas — Adriane Parissi"
+  },
+  {
+   "src": "img/work/selfguru/stories-blog-confianca.webp",
+   "w": 788,
+   "h": 1400,
+   "en": "Blog story — leaders and trust",
+   "pt": "Story do blog — a confiança dos líderes"
+  },
+  {
+   "src": "img/work/selfguru/carrossel-jobs-prancheta-1.webp",
+   "w": 1080,
+   "h": 1350,
+   "en": "Carousel — 5 leadership lessons from Steve Jobs",
+   "pt": "Carrossel — 5 lições de liderança de Steve Jobs"
+  },
+  {
+   "src": "img/work/selfguru/carrossel-jobs-02.webp",
+   "w": 1080,
+   "h": 1350,
+   "en": "Carousel — visionary leadership",
+   "pt": "Carrossel — visão inspiradora"
+  },
+  {
+   "src": "img/work/selfguru/sg-empresa-cresce.webp",
+   "w": 1080,
+   "h": 1080,
+   "en": "Feed — your company grows with its leaders",
+   "pt": "Feed — sua empresa cresce com seus líderes"
+  },
+  {
+   "src": "img/work/selfguru/sg-demissao.webp",
+   "w": 1080,
+   "h": 1080,
+   "en": "Feed — humane layoffs",
+   "pt": "Feed — demissão humanizada"
+  },
+  {
+   "src": "video/selfguru-sg-card1.mp4",
+   "w": 720,
+   "h": 720,
+   "anim": true,
+   "video": true,
+   "en": "Motion card — Self Guru",
+   "pt": "Card animado — Self Guru"
+  }
+ ],
+ "truco-brand": [
+  {
+   "src": "img/work/truco-brand/image61.webp",
    "w": 760,
    "h": 597,
    "en": "Truco Patrão — game logo",
    "pt": "Truco Patrão — logo do jogo"
-  },
-  {
-   "src": "img/work/truco-mascot/image100.webp",
-   "w": 413,
-   "h": 760,
-   "en": "FTUE mascot — welcome",
-   "pt": "Mascote do FTUE — boas-vindas"
-  },
-  {
-   "src": "img/work/truco-mascot/image101.webp",
-   "w": 495,
-   "h": 760,
-   "en": "FTUE mascot — dealing",
-   "pt": "Mascote do FTUE — distribuindo"
-  },
-  {
-   "src": "img/work/truco-mascot/image102.webp",
-   "w": 530,
-   "h": 760,
-   "en": "FTUE mascot — explaining",
-   "pt": "Mascote do FTUE — explicando"
-  },
-  {
-   "src": "img/work/truco-mascot/image105.webp",
-   "w": 479,
-   "h": 760,
-   "en": "FTUE mascot — winning",
-   "pt": "Mascote do FTUE — vitória"
-  }
- ],
- "truco-screens": [
-  {
-   "src": "img/work/truco-screens/image50.webp",
-   "w": 500,
-   "h": 1000,
-   "en": "Match table — the hand in play",
-   "pt": "Mesa de jogo — a mão em andamento",
-   "dev": true
-  },
-  {
-   "src": "img/work/truco-screens/image42.webp",
-   "w": 360,
-   "h": 720,
-   "en": "Paulista lobby",
-   "pt": "Lobby Paulista",
-   "dev": true
-  },
-  {
-   "src": "img/work/truco-screens/image56.webp",
-   "w": 500,
-   "h": 1000,
-   "en": "Mineiro lobby",
-   "pt": "Lobby Mineiro",
-   "dev": true
-  },
-  {
-   "src": "img/work/truco-screens/image86.webp",
-   "w": 562,
-   "h": 1000,
-   "en": "In-game offer — R$500 in five minutes",
-   "pt": "Oferta in-game — R$500 em cinco minutos",
-   "dev": true
-  },
-  {
-   "src": "img/work/truco-screens/image126.webp",
-   "w": 485,
-   "h": 1000,
-   "en": "Placar Truco — scoring app",
-   "pt": "Placar Truco — app de placar"
   }
  ],
  "truco-emoji": [
   {
    "src": "img/work/truco-emoji/emoji-108.gif",
-   "w": 190,
-   "h": 190,
+   "w": 240,
+   "h": 240,
    "anim": true,
    "en": "Reaction emoji — Malicious",
    "pt": "Emoji de reação — Peralta"
   },
   {
-   "src": "img/work/truco-emoji/emoji-109.gif",
-   "w": 190,
-   "h": 190,
-   "anim": true,
-   "en": "Reaction emoji — Thinking",
-   "pt": "Emoji de reação — Pensando"
-  },
-  {
-   "src": "img/work/truco-emoji/emoji-110.gif",
-   "w": 190,
-   "h": 190,
-   "anim": true,
-   "en": "Reaction emoji — Troll",
-   "pt": "Emoji de reação — Troll"
-  },
-  {
-   "src": "img/work/truco-emoji/emoji-111.gif",
-   "w": 190,
-   "h": 190,
-   "anim": true,
-   "en": "Reaction emoji — Smart",
-   "pt": "Emoji de reação — Confia"
-  },
-  {
-   "src": "img/work/truco-emoji/emoji-112.gif",
-   "w": 190,
-   "h": 190,
-   "anim": true,
-   "en": "Reaction emoji — Sweating",
-   "pt": "Emoji de reação — Suando"
-  },
-  {
    "src": "img/work/truco-emoji/emoji-113.gif",
-   "w": 190,
-   "h": 190,
+   "w": 240,
+   "h": 240,
    "anim": true,
    "en": "Reaction emoji — Based",
    "pt": "Emoji de reação — Brabo"
   },
   {
-   "src": "img/work/truco-emoji/emoji-114.gif",
-   "w": 190,
-   "h": 190,
-   "anim": true,
-   "en": "Reaction emoji — Ghost",
-   "pt": "Emoji de reação — Fantasma"
-  },
-  {
-   "src": "img/work/truco-emoji/emoji-116.gif",
-   "w": 190,
-   "h": 190,
-   "anim": true,
-   "en": "Reaction emoji — Duck",
-   "pt": "Emoji de reação — Pato"
-  },
-  {
-   "src": "img/work/truco-emoji/emoji-117.gif",
-   "w": 190,
-   "h": 190,
-   "anim": true,
-   "en": "Reaction emoji — Facepalm",
-   "pt": "Emoji de reação — Facepalm"
-  },
-  {
-   "src": "img/work/truco-emoji/emoji-118.gif",
-   "w": 190,
-   "h": 190,
-   "anim": true,
-   "en": "Reaction emoji — Sly",
-   "pt": "Emoji de reação — Malandro"
-  },
-  {
-   "src": "img/work/truco-emoji/emoji-119.gif",
-   "w": 190,
-   "h": 190,
-   "anim": true,
-   "en": "Reaction emoji — Umm",
-   "pt": "Emoji de reação — Humm"
-  },
-  {
    "src": "img/work/truco-emoji/emoji-120.gif",
-   "w": 190,
-   "h": 190,
+   "w": 240,
+   "h": 240,
    "anim": true,
    "en": "Reaction emoji — Chad",
    "pt": "Emoji de reação — Chad"
@@ -193,64 +246,69 @@ window.WORKS = {
    "pt": "Ludo Campeões — logo do jogo"
   }
  ],
- "ludo-screens": [
+ "illustration": [
   {
-   "src": "img/work/ludo-screens/image135.webp",
-   "w": 459,
-   "h": 1000,
-   "en": "Game board",
-   "pt": "Tabuleiro",
-   "dev": true
+   "src": "img/work/illustration/77e3af110840925-66b100a230b05.webp",
+   "w": 990,
+   "h": 1400,
+   "en": "Bounty Hunters (and their babies) — tee art",
+   "pt": "Bounty Hunters (and their babies) — arte de camiseta"
   },
   {
-   "src": "img/work/ludo-screens/image131.webp",
-   "w": 360,
-   "h": 720,
-   "en": "Lobby & tournaments",
-   "pt": "Lobby e torneios",
-   "dev": true
+   "src": "img/work/illustration/0e9106110840925-5ff673625c2ea.webp",
+   "w": 1400,
+   "h": 990,
+   "en": "Bounty Hunters — line art and colour roughs",
+   "pt": "Bounty Hunters — lineart e rafes de cor"
   },
   {
-   "src": "img/work/ludo-screens/image133.webp",
-   "w": 500,
-   "h": 1000,
-   "en": "Match result",
-   "pt": "Resultado da partida",
-   "dev": true
+   "src": "img/work/illustration/533482110840925-5ff673625bc93.webp",
+   "w": 1400,
+   "h": 983,
+   "en": "Bounty Hunters — detail",
+   "pt": "Bounty Hunters — detalhe"
   },
   {
-   "src": "img/work/ludo-screens/image134.webp",
-   "w": 500,
-   "h": 1000,
-   "en": "Missões — daily goals",
-   "pt": "Missões — objetivos diários",
-   "dev": true
-  }
- ],
- "boards": [
-  {
-   "key": "grou",
-   "src": "img/work/boards/grou.webp",
-   "w": 1016,
-   "h": 1800,
-   "en": "Grou — social media system",
-   "pt": "Grou — sistema de social media"
+   "src": "img/work/illustration/4431f699257741-66bba6b603939.webp",
+   "w": 1164,
+   "h": 1358,
+   "en": "20 Rupees! — final colour",
+   "pt": "20 Rupees! — cor final"
   },
   {
-   "key": "rocking",
-   "src": "img/work/boards/rocking.webp",
-   "w": 1016,
-   "h": 1800,
-   "en": "Rocking Talent Brasil — magazine social",
-   "pt": "Rocking Talent Brasil — social da revista"
+   "src": "img/work/illustration/sketch-full.webp",
+   "w": 1164,
+   "h": 1358,
+   "en": "20 Rupees! — pencil sketch",
+   "pt": "20 Rupees! — esboço a lápis"
   },
   {
-   "key": "selfguru",
-   "src": "img/work/boards/selfguru.webp",
-   "w": 1016,
-   "h": 1800,
-   "en": "Self Guru — social media system",
-   "pt": "Self Guru — sistema de social media"
+   "src": "img/work/illustration/a0c78199257741-5ff01c8c50965.webp",
+   "w": 1164,
+   "h": 1117,
+   "en": "20 Rupees! — flat colour pass",
+   "pt": "20 Rupees! — etapa de cor chapada"
+  },
+  {
+   "src": "img/work/illustration/7dc72f99622089-5ef80cd75767a.webp",
+   "w": 1400,
+   "h": 1400,
+   "en": "Gerudo Majora’s Mask — final render",
+   "pt": "Gerudo Majora’s Mask — render final"
+  },
+  {
+   "src": "img/work/illustration/6a6f1e99622089-5ef6a91939382.webp",
+   "w": 1400,
+   "h": 1400,
+   "en": "Gerudo Majora’s Mask — value study",
+   "pt": "Gerudo Majora’s Mask — estudo de valores"
+  },
+  {
+   "src": "img/work/illustration/61a671158091063-63895b87de3b2.webp",
+   "w": 1400,
+   "h": 747,
+   "en": "Zelda (a different concept) — model sheet",
+   "pt": "Zelda (um conceito diferente) — model sheet"
   }
  ]
 };
