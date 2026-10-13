@@ -935,6 +935,8 @@ svg.fill { width: 1em; height: 1em; fill: currentColor; stroke: none; }
 .sb-card figcaption span { color: var(--paper-ink-2); overflow: hidden; text-overflow: ellipsis; }
 
 .sb-art { position: relative; overflow: hidden; background: #fff; }
+/* vertical swipes scroll the page; sideways drags belong to the wipe */
+.sb-card[data-sketch] .sb-art { touch-action: pan-y; }
 .sb-art img { display: block; width: 100%; height: auto; }
 .sb-art .sb-sketch { position: absolute; inset: 0; width: 100%; height: 100%; }
 /* wipe: the pencil stage shows left of the pointer, colour to the right */
