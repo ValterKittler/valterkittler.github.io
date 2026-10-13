@@ -464,6 +464,7 @@
      moving across the print wipes it back in under the pointer (or fades it
      in whole, when the sketch is a different shape); a click opens the
      viewer on the whole project. */
+  var sbTimer = null;
   function renderSketchbook() {
     var items = WORKS.illustration || [];
     $$('.sb-card').forEach(function (old) {
@@ -493,39 +494,41 @@
           card.style.setProperty('--x', (x * 100).toFixed(1) + '%');
           card.classList.add('is-wiping');
         };
-        var reset = function (c) {
-          c.classList.remove('is-wiping');
-          c.style.setProperty('--x', '0%');
-        };
-        /* Mouse: the wipe follows the pointer and lets go when it leaves.
-           Touch: a sideways drag wipes (vertical swipes still scroll the page,
-           see touch-action in the CSS), the wipe stays where the finger lifts,
-           and a plain tap still opens the viewer. */
-        var startX = 0;
-        card.addEventListener('pointerdown', function (ev) {
-          startX = ev.clientX; card._dragged = false;
-          if (ev.pointerType !== 'mouse') {
-            $$('.sb-card.is-wiping').forEach(function (c) { if (c !== card) reset(c); });
-          }
-        });
-        card.addEventListener('pointerenter', function (ev) { if (ev.pointerType === 'mouse') move(ev); });
-        card.addEventListener('pointermove', function (ev) {
-          if (ev.pointerType === 'mouse') { move(ev); return; }
-          if (ev.buttons === 0 && ev.pressure === 0) return;
-          if (Math.abs(ev.clientX - startX) > 6) card._dragged = true;
-          if (card._dragged) move(ev);
-        });
-        card.addEventListener('pointerleave', function (ev) { if (ev.pointerType === 'mouse') reset(card); });
+        /* Mouse only: the wipe follows the pointer. Touch screens get the
+           automatic sketch/colour flip below instead. */
+        if (!coarse.matches) {
+          card.addEventListener('pointerenter', move);
+          card.addEventListener('pointermove', move);
+          card.addEventListener('pointerleave', function () {
+            card.classList.remove('is-wiping');
+            card.style.setProperty('--x', '0%');
+          });
+        }
       }
-      card.addEventListener('click', function (ev) {
-        if (card._dragged) { card._dragged = false; ev.preventDefault(); return; }   // that was a wipe
-        openLightbox('illustration', n);
-      });
+      card.addEventListener('click', function () { openLightbox('illustration', n); });
       card.addEventListener('keydown', function (ev) {
         if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); openLightbox('illustration', n); }
       });
     });
     observe($$('.sb-card'));
+
+    /* Touch screens: every paired print flips between its sketch and its final
+       colour on its own, a beat apart, while the board is on screen. */
+    if (coarse.matches && !reduced.matches && !sbTimer) {
+      sbTimer = setInterval(function () {
+        var board = $('.sb-board');
+        if (!board || document.hidden || lb.open) return;
+        var box = board.getBoundingClientRect();
+        if (box.bottom < 0 || box.top > window.innerHeight) return;
+        $$('.sb-card[data-sketch]').forEach(function (c, k) {
+          setTimeout(function () {
+            var on = !c.classList.contains('is-sketch');
+            c.classList.toggle('is-sketch', on);
+            c.style.setProperty('--x', on ? '100%' : '0%');
+          }, k * 450);
+        });
+      }, 3000);
+    }
 
     /* the pixel character: idle and run loops side by side */
     $$('[data-pixel]').forEach(function (fig) {
