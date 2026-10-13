@@ -955,6 +955,26 @@ svg.fill { width: 1em; height: 1em; fill: currentColor; stroke: none; }
 .sb-card--gerudo { left: 37%; top: 47%; width: 30%; rotate: -2deg; }
 .sb-card--rupees { left: 69%; top: 43%; width: 30%; rotate: 3deg; }
 
+/* the pixel-art character, idle and running, standing on the paper itself */
+.sb-pixel {
+  position: absolute; left: 2%; top: 74%; width: 32%; margin: 0;
+  display: flex; flex-direction: column; align-items: center; gap: .3rem;
+}
+.sb-sprites { display: flex; align-items: flex-end; justify-content: center; gap: clamp(.5rem, 2vw, 1.6rem); }
+.sb-sprites img {
+  height: clamp(104px, 11.5vw, 168px); width: auto;
+  image-rendering: pixelated; image-rendering: crisp-edges;
+  filter: drop-shadow(0 6px 0 rgba(43,36,32,.12));
+}
+.sb-pixel figcaption {
+  font-family: 'Caveat', var(--f-body); font-size: clamp(1rem, 1.35vw, 1.3rem); line-height: 1.1;
+  display: flex; gap: .5rem; align-items: baseline;
+}
+.sb-pixel figcaption b { font-weight: 700; }
+.sb-pixel figcaption span { color: var(--paper-ink-2); }
+.js .sb-pixel { opacity: 0; transition: opacity .8s var(--ease-io) .3s; }
+.js .sb-pixel.is-in { opacity: 1; }
+
 .js .sb-card { opacity: 0; transform: translateY(30px); }
 .js .sb-card.is-in { opacity: 1; transform: none; }
 .sb-card:nth-child(2) { transition-delay: .08s; }
@@ -971,6 +991,8 @@ svg.fill { width: 1em; height: 1em; fill: currentColor; stroke: none; }
     display: grid; grid-template-columns: 1fr 1fr; gap: 1.6rem 1rem; align-items: start; }
   .sb-card { position: relative; left: auto; top: auto; width: auto; }
   .sb-card--zelda { grid-column: 1 / -1; order: 4; }
+  .sb-pixel { position: relative; left: auto; top: auto; width: auto; order: 3; align-self: center; }
+  .sb-sprites img { height: clamp(96px, 28vw, 190px); }
   .sb-card figcaption span { display: none; }
 }
 
@@ -1239,19 +1261,33 @@ svg.fill { width: 1em; height: 1em; fill: currentColor; stroke: none; }
   .tl { grid-template-columns: 1fr; gap: .35rem; }
   .phones { --ph: min(58vh, calc(100cqw / (2.3 * var(--arn)))); }
   .phone { margin: 0 -5%; }
-  /* too narrow for side labels: they become a numbered list under the phone */
-  .wire { --wh: min(60vh, 460px); grid-template-columns: 1fr; justify-items: center; }
-  .wire-phone { margin: 0; }
-  .callouts { display: contents; }
-  .callouts li { position: static; translate: none; width: auto; justify-content: center; }
-  .callouts li::before, .callouts li::after { display: none; }
-  .wire { row-gap: .5rem; }
-  .callouts li { order: 2; }
-  .callouts li[data-spot="1"] { order: 1; } .callouts li[data-spot="2"] { order: 2; }
-  .callouts li[data-spot="3"] { order: 3; } .callouts li[data-spot="4"] { order: 4; }
-  .wire-phone { order: 0; margin-bottom: .6rem; }
-  .callouts li span { max-width: none; }
-  .art--logo { width: 120px; }
+  /* narrow screens: a smaller phone, and each callout becomes a numbered
+     bubble on the phone's edge with a short label beside it */
+  .scene-stage--map { margin-inline: calc(12px - var(--gutter)); }
+  .wire { --wh: min(54vh, 290px); }
+  .wire .wire-phone { margin: 0; }
+  .callouts li { font-size: .68rem; gap: .3rem; }
+  .callouts--l { padding-right: .35rem; } .callouts--r { padding-left: .35rem; }
+  .callouts li span { max-width: none; line-height: 1.2; overflow-wrap: anywhere; }
+  .callouts li::after, .callouts li::before { display: none; }
+  .callouts li i {
+    display: grid; place-items: center; flex: none;
+    width: 1.35rem; height: 1.35rem; border-radius: 50%;
+    background: rgba(255,255,255,.12); color: var(--sc-ink); font-size: .62rem;
+    transition: background-color .35s, box-shadow .35s;
+  }
+  .callouts--l li i { order: 2; }          /* bubble sits next to the phone */
+  .callouts--l li::after { order: 3; }
+  .callouts--r li i { order: 0; }
+  .callouts--r li span { order: 1; }
+  .callouts li.is-hot i { background: var(--sc-accent); color: #fff; box-shadow: 0 0 0 4px rgba(255,106,19,.25); }
+  /* phones: the logo leaves the copy and sits on top of the middle phone */
+  .scene-copy--logo { display: block; }
+  .scene-copy--logo > .scene-logo { display: none; }
+  .scene--truco .art--logo, .scene--ludo .art--logo {
+    display: block; z-index: 4; width: 46%; max-width: 220px;
+    left: 50%; right: auto; top: -9%; bottom: auto; translate: -50% 0; rotate: -3deg;
+  }
   .art--bubble { display: none; }
   .about-meta span { flex-basis: 100%; }
   .lb-close, .lb-nav { width: 40px; height: 40px; }
@@ -1272,7 +1308,7 @@ svg.fill { width: 1em; height: 1em; fill: currentColor; stroke: none; }
     scroll-behavior: auto !important;
   }
   .js .reveal, .js .anim, .js .set .tile, .js .cutouts .cutout,
-  .js .phone, .js .art, .js .sb-card { opacity: 1; transform: none; }
+  .js .phone, .js .art, .js .sb-card, .js .sb-pixel { opacity: 1; transform: none; }
   .phone { --py: 0px !important; }
   .marquee-track { animation: none; }
   .hero-tag { animation: none; }

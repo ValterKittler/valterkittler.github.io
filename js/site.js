@@ -506,6 +506,18 @@
       });
     });
     observe($$('.sb-card'));
+
+    /* the pixel character: idle and run loops side by side */
+    $$('[data-pixel]').forEach(function (fig) {
+      var row = $('.sb-sprites', fig);
+      row.innerHTML = '';
+      (WORKS.pixel || []).forEach(function (it) {
+        var im = mediaFor(it, true);
+        im.alt = caption(it);
+        row.appendChild(im);
+      });
+      observe([fig]);
+    });
   }
 
   function renderAll() {

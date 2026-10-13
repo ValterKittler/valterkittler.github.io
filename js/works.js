@@ -310,5 +310,23 @@ window.WORKS = {
    "en": "Zelda (a different concept) — model sheet",
    "pt": "Zelda (um conceito diferente) — model sheet"
   }
+ ],
+ "pixel": [
+  {
+   "src": "img/work/pixel/idle.gif",
+   "w": 76,
+   "h": 106,
+   "anim": true,
+   "en": "Pixel art — idle loop",
+   "pt": "Pixel art — loop parado"
+  },
+  {
+   "src": "img/work/pixel/run.gif",
+   "w": 76,
+   "h": 106,
+   "anim": true,
+   "en": "Pixel art — run cycle",
+   "pt": "Pixel art — ciclo de corrida"
+  }
  ]
 };
